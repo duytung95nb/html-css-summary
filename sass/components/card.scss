@@ -1,0 +1,5 @@
+@import './mixins/card.scss';
+
+.card {
+    @include create-card();
+}

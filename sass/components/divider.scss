@@ -1,0 +1,7 @@
+@import './mixins/divider.scss';
+
+.divider {
+    &--default {
+        @include create-divider();
+    }
+}

@@ -1,0 +1,23 @@
+
+@mixin create-divider($length: $divider-length,
+                    $content: $divider-content,
+                    $width: $divider-width,
+                    $line-width: $divider-line-width,
+                    $line-style: $divider-line-style,
+                    $line-color: $divider-line-color,
+                    $text-align: $divider-text-align,
+                    $background-icon-color: $divider-background-icon-color) {
+    text-align: $text-align;
+    border-width: $line-width 0 0 0;
+    border-color: $line-color;
+    border-style: $line-style;
+    width: $width;
+    &::after {
+        margin: 0 0.5em;
+        position: relative;
+        top: -10px;
+        padding: 4px;
+        content: $content;
+        background-color: $background-icon-color;
+    }
+}

@@ -1,0 +1,20 @@
+@mixin create-page ($width: $page-width,
+                    $background-color: $page-color,
+                    $header-background-color: $page-header-background-color,
+                    $header-height: $page-header-height,
+                    $paddings: $page-header-paddings,
+                    $opacity: $page-header-opacity,
+                    $header-position: $page-header-position) {
+    &__header {
+        background-color: $header-background-color;
+        opacity: $opacity;
+        height: $header-height;
+        padding: $paddings;
+        position: $header-position;
+        width: 100%;
+        z-index: 9999;
+    }
+    &__content {
+
+    }
+}

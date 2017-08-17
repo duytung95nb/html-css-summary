@@ -1,0 +1,5 @@
+
+@mixin create-multi-column-element($width-percentage) {
+    float: left;
+    width: #{$width-percentage}#{'%'};
+}

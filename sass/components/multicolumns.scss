@@ -1,0 +1,11 @@
+@import './mixins/multi-columns.scss';
+
+// multi-columns__col-X
+.multi-columns {
+    position: relative;
+    @for $i from 1 through 99 {
+        &__col-#{$i} {
+            @include create-multi-column-element($i);
+        }
+    }
+}
