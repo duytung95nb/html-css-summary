@@ -1,0 +1,13 @@
+
+@mixin createBanner($url,
+                    $height: $page-banner-height,
+                    $text-color: $page-banner-text-color) {
+    background: url($url) no-repeat fixed;
+    background-size: 100%;
+    height: $height;
+    color: $text-color;
+    text-align: center;
+    & * {
+        transform: translateY(150px);
+    }
+}

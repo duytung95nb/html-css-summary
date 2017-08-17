@@ -1,0 +1,21 @@
+@import './mixins/banner.scss';
+@import './mixins/button.scss';
+
+.setup {
+    @include createBanner($url: '../images/background/City.jpg');
+    &__title {
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+    &__content {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    &__explore {
+        @include createButton($border: 1px solid yellow,
+                                $text-color: yellow,
+                                $background-color: transparent,
+                                $padding: 10px);
+        margin-bottom: 20px;
+    }
+}

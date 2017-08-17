@@ -1,0 +1,10 @@
+@mixin create-navigation($navigation-color: $navigation-color,
+                        $flex-direction: $main-nav-flex-direction,
+                        $item-distance: $main-nav-item-distance) {
+    display: block;
+    &__item {
+        color: $navigation-color;
+        display: inline-block;
+        margin-left: $item-distance;
+    }
+}

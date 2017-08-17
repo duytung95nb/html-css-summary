@@ -1,0 +1,5 @@
+@import './mixins/icon.scss';
+
+.fa {
+    @include create-icon();
+}

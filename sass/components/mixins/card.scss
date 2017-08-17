@@ -1,0 +1,13 @@
+
+@mixin create-card($title-font-size: $card-title-font-size,
+                    $content-font-size: $card-content-font-size) {                   
+    &__icon-container {
+    }
+    &__title {
+        font-size: $title-font-size;
+        font-weight: bold;
+    }
+    &__content {
+        font-size: $content-font-size;
+    }
+}
