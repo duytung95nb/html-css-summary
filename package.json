@@ -1,0 +1,19 @@
+{
+  "name": "tung",
+  "version": "1.0.0",
+  "description": "html css",
+  "main": "index.js",
+  "scripts": {
+    "test": "run",
+    "sass": "node-sass --include-path sass sass/themes/default/index.scss assets/css/style_sass.css"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "tung dao",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
